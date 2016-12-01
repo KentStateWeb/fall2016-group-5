@@ -16,7 +16,7 @@ nav ul{
 	list-style-type: none;
 	}
 
-.logo{
+.logo-white{
 
  width:200px;
  padding: 1em;
@@ -166,7 +166,14 @@ img {
 }
 
 .main{
-opacity:50%;
+	opacity:50%;
+	background-size:cover;
+	position: absolute;
+}
+
+.logo-red{
+ position: relative;
+
 }
 
 .Vineyard{
