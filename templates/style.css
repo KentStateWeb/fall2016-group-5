@@ -3,12 +3,6 @@ html, body {
 	padding:0;
 }
 
-
-
-
-
-
-
 /* navigation header */
 
 nav {
@@ -19,6 +13,7 @@ nav {
 	top: 0;
 	width: 100%;
 	z-index: 3;
+
 }
 
 nav ul{
@@ -37,7 +32,7 @@ nav ul{
 
 nav a{
 	 font-family: 'Roboto Slab', serif;
-	 font-weight: 100;
+	 font-weight: 300;
 	 display: block;
 	 color: white;
 	 text-align: center;
@@ -46,9 +41,9 @@ nav a{
 
 
 
-.logo-white{
+#logo-nav{
 
- width:100px;
+ 	width:100px;
 
 }
 
@@ -142,6 +137,7 @@ a.menu-link {
 	}
 	h3{
 		font-size: 2em;
+		color: rgb(204, 187, 19);
 		margin: 0 auto;
   	display: block;
 		text-align: center;
@@ -175,14 +171,55 @@ a.menu-link {
 	.paragraph2{
 
 	}
+
+/* media queries */
+
 @media screen and (min-width: 800px) {
 	p {
-			width:60%;
+			width:50%;
 			margin: 0 auto;
   		display: block;
-			font-size:20px;
+			font-size:15px;
+			padding-bottom: 5em;
 
 		}
+	h1{
+			font-size: 4em;
+			margin: 0 auto;
+	  	display: block;
+			text-align: center;
+			line-height: 1em;
+
+
+		}
+	h2{
+			font-size: 4em;
+			font-style:italic;
+			margin: 0 auto;
+	  	display: block;
+			text-align: center;
+			padding:0 0 40px 0;
+			width:60%;
+			line-height: 1em;
+			}
+
+	.main{
+			width:100%;
+			opacity:0.5;
+			background-size:cover;
+			height: auto;
+			position: relative;
+			padding-bottom: 5em;
+			}
+		}
+		.winetour{
+			background-size:cover;
+			width:100%;
+			height: auto;
+			position:relative;
+			padding-bottom: 5em;
+		}
+	}
 @media screen and (min-width: 1200px) {
 			p {
 					width:40%;
@@ -190,18 +227,7 @@ a.menu-link {
 		  		display: block;
 					font-size: 20px;
 				}
-		.logo-red{
-				 max-height: 50%;
-				 max-width: 50%;
-				 padding: 5px;
-				 top: 10em;
-				 left: 21em;
-				 bottom: 15em;
-				 z-index: 2;
-			   position:absolute;
-				 margin: 0 auto;
 
-				}
 				.main{
 					width:100%;
 					opacity:0.5;
@@ -210,53 +236,67 @@ a.menu-link {
 					position: relative;
 					padding-bottom: 5em;
 				}
+
+
+				img {
+					margin: 0 auto;
+				}
+
+				.main{
+					width:100%;
+					opacity:0.5;
+					background-size:cover;
+					height: auto;
+					position: relative;
+					padding-bottom: 5em;
+					z-index: -1;
+				}
+
+
+				.winetour{
+					width:100%;
+					opacity:0.5;
+					background-size:cover;
+					height: auto;
+					position: relative;
+					padding-bottom: 5em;
+					z-index: -1;
+				}
+
+
+				footer {
+					background-color: rgb(83, 18, 17);
+					color:#CCB8A3;
+					padding: 3px;
+					height: 250px;
+				}
+
+				.hours{
+					float:left;
+					padding: 10px;
+					width: 33%
+
+				}
+				.contact {
+					float:right;
+					padding:10px;
+					width: 33%
+
+				}
+				.logo-footer{
+
+					position:fixed;
+					float:left;
+					max-width: 100px;
+
+
+				}
 }
 
-img {
+h3{
+		font-size: 5em;
+		color: rgb(204, 184, 163);
 		margin: 0 auto;
-}
-
-.main{
-	width:100%;
-	opacity:0.5;
-	background-size:cover;
-	height: auto;
-	position: relative;
-	padding-bottom: 5em;
-	z-index: -1;
-}
-
-
-.textoverlay {
-	position:relative;
-
-}
-
-.mainphototext{
-		left: 0;
-    position:absolute;
-    text-align:center;
-    top: 30px;
-    width: 100%
-}
-
-
-
-.Vineyard{
-	background-size:cover;
-	width:100%;
-	display:flex;
-	padding-bottom: 5em;
-	}
-
-footer {
-	background-color: rgb(83, 18, 17);
-	color:#CCB8A3;
-	padding: 3px;
-	height: 250px;
-}
-
-.hours{
-float:left;
-padding: 10px;
-}
+		display: block;
+		text-align: center;
+		}
