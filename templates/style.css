@@ -43,17 +43,17 @@ nav a{
 
 #logo-nav{
 
- 	width:100px;
+ 	width:125px;
 
 }
 
-	@media screen and (min-width: 600px)
-	{
-		nav ul{
-		display:flex;
-			justify-content:space-around;
-		}
+.first-sentence
+{
+	font-weight:700;
+	font-style: italic;
+	font-size: 100%;
 }
+
 
 /* hamburger button css*/
 
@@ -174,12 +174,231 @@ a.menu-link {
 
 /* media queries */
 
+@media screen and (min-width: 200px)
+{
+	nav ul{
+	display:flex;
+		justify-content:space-around;
+	}
+	h3{
+			font-size: 40px;
+			color: rgb(204, 187, 19);
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+
+		}
+		.main{
+				width:100%;
+				opacity:0.5;
+				background-size:cover;
+				height: auto;
+				position: relative;
+				padding-bottom: 5em;
+				}
+		.wine-tasting{
+				background-size:cover;
+				width:100%;
+				height: auto;
+				position:relative;
+				padding-bottom: 5em;}
+
+		.vineyard-tour{
+				background-size:cover;
+				width:100%;
+				height: auto;
+				position:relative;
+				padding-bottom: 5em;
+				padding-top: 5em;
+					}
+
+		p {
+				width:50%;
+				margin: 0 auto;
+				display: block;
+				font-size:10px;
+				padding-bottom: 5em;
+			}
+			.wine-tasting-section{
+				position: relative;
+				width: 100%;
+			}
+			.vineyard-tour-section{
+				position: relative;
+				width: 100%;
+			}
+			.sectiontitle-1{
+				color: white;
+				font-family: 'Roboto Slab', serif;
+				position: absolute;
+				font-size: 3px;
+				top: 2px;
+				left: 2px;
+				width: 100%;
+
+}
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 400px)
+{
+	nav ul{
+	display:flex;
+		justify-content:space-around;
+	}
+	h3{
+			font-size: 40px;
+			color: rgb(204, 187, 19);
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+
+		}
+		.main{
+				width:100%;
+				opacity:0.5;
+				background-size:cover;
+				height: auto;
+				position: relative;
+				padding-bottom: 5em;
+				}
+		.wine-tasting{
+				background-size:cover;
+				width:100%;
+				height: auto;
+				position:relative;
+				padding-bottom: 5em;}
+
+		.vineyard-tour{
+				background-size:cover;
+				width:100%;
+				height: auto;
+				position:relative;
+				padding-bottom: 5em;
+				padding-top: 5em;
+					}
+
+		p {
+				width:50%;
+				margin: 0 auto;
+				display: block;
+				font-size:12px;
+				padding-bottom: 5em;
+			}
+			.wine-tasting-section{
+				position: relative;
+				width: 100%;
+			}
+			.vineyard-tour-section{
+				position: relative;
+				width: 100%;
+			}
+		.sectiontitle-1	{
+				color: white;
+				font-family: 'Roboto Slab', serif;
+				position: absolute;
+				font-size: 15px;
+				top: 5%;
+				left: 10px;
+				width: 100%;
+
+}
+footer {
+	background-color: rgb(83, 18, 17);
+	color:#CCB8A3;
+	padding: 3px;
+	height: 250px;
+}
+			}
+
+
+@media screen and (min-width: 600px)
+{
+	nav ul{
+	display:flex;
+		justify-content:space-around;
+	}
+	h3{
+			font-size: 40px;
+			color: rgb(204, 187, 19);
+			margin: 0 auto;
+			display: block;
+			text-align: center;
+
+		}
+		.main{
+				width:100%;
+				opacity:0.5;
+				background-size:cover;
+				height: auto;
+				position: relative;
+				padding-bottom: 5em;
+				}
+				p {
+						width:40%;
+						margin: 0 auto;
+						display: block;
+						font-size:20px;
+						padding-bottom: 5em;
+
+		}
+		.wine-tasting{
+			background-size:cover;
+			width:100%;
+			height: auto;
+			position:relative;
+			padding-bottom: 5em;}
+
+			.vineyard-tour{
+				background-size:cover;
+				width:100%;
+				height: auto;
+				position:relative;
+				padding-bottom: 5em;
+				padding-top: 5em;
+			}
+			.wine-tasting-section{
+				position: relative;
+				width: 100%;
+			}
+			.vineyard-tour-section{
+				position: relative;
+				width: 100%;
+			}
+			.sectiontitle-1{
+				color: white;
+				font-family: 'Roboto Slab', serif;
+				position: absolute;
+				font-size: 15px;
+				top: 20px;
+				left: 20px;
+				width: 100%;
+
+
+			}
+			footer {
+				background-color: rgb(83, 18, 17);
+				color:#CCB8A3;
+				padding: 3px;
+				height: 250px;
+			}
+		}
+
+
+
+
+
 @media screen and (min-width: 800px) {
 	p {
 			width:50%;
 			margin: 0 auto;
   		display: block;
-			font-size:15px;
+			font-size:20px;
 			padding-bottom: 5em;
 
 		}
@@ -212,13 +431,48 @@ a.menu-link {
 			padding-bottom: 5em;
 			}
 		}
-		.winetour{
+		.wine-tasting{
 			background-size:cover;
 			width:100%;
 			height: auto;
 			position:relative;
-			padding-bottom: 5em;
-		}
+			padding-bottom: 5em;}
+
+			.vineyard-tour{
+				background-size:cover;
+				width:100%;
+				height: auto;
+				position:relative;
+				padding-bottom: 5em;
+				padding-top: 5em;
+			}
+			.wine-tasting-section{
+				position: relative;
+				width: 100%;
+			}
+			.vineyard-tour-section{
+				position: relative;
+				width: 100%;
+			}
+			.sectiontitle-1{
+				color: white;
+				font-family: 'Roboto Slab', serif;
+				position: absolute;
+				font-size: 22px;
+				top: 80px;
+				left: 100px;
+				width: 100%;
+
+
+			}
+			footer {
+				background-color: rgb(83, 18, 17);
+				color:#CCB8A3;
+				padding: 3px;
+				height: 250px;
+			}
+
+
 	}
 @media screen and (min-width: 1200px) {
 			p {
@@ -226,6 +480,14 @@ a.menu-link {
 					margin: 0 auto;
 		  		display: block;
 					font-size: 20px;
+				}
+
+				h3{
+					font-size: 60px;
+					color: rgb(204, 187, 19);
+					margin: 0 auto;
+					display: block;
+					text-align: center;
 				}
 
 				.main{
@@ -255,7 +517,6 @@ a.menu-link {
 
 				.winetour{
 					width:100%;
-					opacity:0.5;
 					background-size:cover;
 					height: auto;
 					position: relative;
@@ -263,40 +524,101 @@ a.menu-link {
 					z-index: -1;
 				}
 
-
-				footer {
-					background-color: rgb(83, 18, 17);
-					color:#CCB8A3;
-					padding: 3px;
-					height: 250px;
+				.tasting{
+					width:100%;
+					background-size:cover;
+					height: auto;
+					position: relative;
+					padding-bottom: 5em;
+					z-index: -1;
 				}
 
-				.hours{
-					float:left;
-					padding: 10px;
-					width: 33%
-
+				.wine-tasting-section{
+					position: relative;
+					width: 100%;
 				}
-				.contact {
-					float:right;
-					padding:10px;
-					width: 33%
 
-				}
-				.logo-footer{
-
-					position:fixed;
-					float:left;
-					max-width: 100px;
+				.sectiontitle-1{
+					color: white;
+					font-family: 'Roboto Slab', serif;
+					position: absolute;
+					font-size: 80px;
+					top: 175px;
+					left: 200px;
+					width: 100%;
 
 
 				}
+
+				.vineyard-tour-section{
+					position: relative;
+					width: 100%;
+				}
+.sectiontitle-2{
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	position: absolute;
+	font-size: 80px;
+	top: 175px;
+	left: 200px;
+	width: 100%;
+
+}
+footer {
+	background-color: rgb(83, 18, 17);
+	color:#CCB8A3;
+	padding: 3px;
+	height: 250px;
+}
 }
 
-h3{
-		font-size: 5em;
-		color: rgb(204, 184, 163);
-		margin: 0 auto;
-		display: block;
-		text-align: center;
-		}
+
+
+		@media screen and (min-width: 1400px) {
+
+													.hours{
+														float:left;
+														padding: 10px;
+														display: flex;
+														flex-direction:row;
+														align-content: space-between;
+														color: white;
+														margin-left:75px;
+														font-size: 80%
+
+													}
+													.contact {
+														display: flex;
+														flex-direction:row;
+														justify-content: space-between;
+														color: white;
+														font-size:80%
+													}
+													footer {
+														background-color: rgb(83, 18, 17);
+														color:#CCB8A3;
+														padding: 3px;
+														height: 250px;
+													}
+
+
+												.wine-tasting-section{
+													position: relative;
+													width: 100%;
+												}
+												.vineyard-tour-section{
+													position: relative;
+													width: 100%;
+												}
+												.sectiontitle-1{
+													color: white;
+													font-family: 'Roboto Slab', serif;
+													position: absolute;
+													font-size: 40px;
+													top: 175px;
+													left: 200px;
+													width: 100%;
+
+
+												}
+												}

@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+
+    <script src="https://use.typekit.net/nkp5vto.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Off the Vine</title>
-    <meta name="description" content="Page Description Goes Here">
+    <meta name="description" content="Off the Vine Winery and Dining Experience">
+
   </head>
   <body>
-
 <!--start header-->
-<div id="header">
-      <header>
-        <img src="http://rwdkent.com/class/groups/assets/group5/off-the-vine.svg" alt="Off the Vine"/>
-    </header>
-  </div>
-  <!--end header-->
-<!--start navigation-->
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Events</li>
-        <li>Menu</li>
-        <li>Shop</li>
-      </ul>
-    </nav>
-<!--end navigation-->
+ <header>
 
+<!-- This is your navigation menu trigger.  It only shows for small screens.  You can style it any way you want, including as a hamburger menu.-->
+<a href="#menu" class="menu-link">Menu</a>
+
+<nav id="menu" role="navigation">
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="#">our story</a></li>
+				<li><a href="#">events</a></li>
+        <li><a href="#"> <img id= "logo-nav" src="images/off-the-vine-02.png"></a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">contact</a></li>
+        <li><a href-"#">cart</a></li>
+			</ul>
+</nav>
+</header>
+<!--end header-->
+
+  <main>
 <!--start photo-->
-    <div class="mainphoto">
-      <img src="images/mainphoto_4.jpg" width="400" height="200">
-    </img>
-  </div>
+<div style="text-align: center">
+<div class="textoverlay">
+
+<img class= "main" src="images/mainphoto_4.jpg" alt="Wine Glasses">
+    <div class="mainphototext">
+
+    </div>
+</div>
+</div>
+<body>
+   <h3>HOW BOUT SOME CHEESE WITH THAT WINE?</h3>
+
+  <img class= "wine-tasting" src="images/mainphoto_6.jpg" alt="wine being poured"/>
+
   <!--photo-->
 
 <!--start menu-->
-<section class="appetizers">
-  <h2>Food Menu</h2>
 
-  <h1>Appetizers</h1>
+  <h2>FOOD MENU</h2>
+  <hr>
 
+  <h4>Appetizers</h4>
+<div class="appetizers">
   <p>
-    <ul>Cheese Board:$12.25</ul>
+  <ul><span class="menu-items">Cheese Board:$12.25</span></ul>
   <ul>select cheeses, house-made cranberry-feta spread, fig preserves, Laurello's candied walnuts and crackers</ul>
 
-  <ul>Antipasto Board:$12.25</ul>
+  <ul><span class="menu-items">Antipasto Board:$12.25</span></ul>
   <ul>select cheeses, roasted red peppers, Kalamata and Greek olives, Margherita pepperoni and crackers</ul>
 
 
-  <ul>Brie Cheese Plate:$10.25</ul>
+  <ul><span class="menu-items">Brie Cheese Plate:$10.25</span></ul>
   <ul>Brie, with caramelized butter and brown sugar, topped with nuts and served with crackers</ul>
 
 
-  <ul>Tomato Caprese Board:$9.25</ul>
+  <ul><span class="menu-items">Tomato Caprese Board:$9.25</span></ul>
   <ul>Sliced tomatoes, fresh mozzarella, drizzled with basil pesto, olive oil, balsamic glaze and served with crispy crostini</ul>
 
 
-  <ul>Bread tray:$7.50</ul>
+  <ul><span class="menu-items">Bread tray:$7.50</span></ul>
   <ul>Warm, crusty bread loaves with a dipping plate of olive oil, balsamic glaze and grated parmesan cheese</ul>
 
 
-  <ul>Artichoke dip:$8.25</ul>
+  <ul><span class="menu-items">Artichoke dip:$8.25</span></ul>
   <ul>Homemade warm dip served with tortilla chips.</ul>
 
 
-  <ul>Lucy's Eggplant Caponata:$8.95</ul>
+  <ul><span class="menu-items">Lucy's Eggplant Caponata:$8.95</span></ul>
   <ul>(Seasonal) Authentic Italian recipe with eggplant, onions, green olives, celery, capers, golden raisins in a zesty tomato sauce served with crostini.</ul>
 
 
-  <ul>Special Flatbread Appetizer:  $9.95</ul>
+  <ul><span class="menu-items">Special Flatbread Appetizer:  $9.95</span ></ul>
 <ul>Oven-fired flatbread with gourmet toppings selected weekly.</ul>
 </p>
 
-</section>
+</div>
 <!--end menu-->
 
 
@@ -91,6 +109,6 @@
     </footer>
 <!--end footer-->
 
-      <link href="style.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
+      <link href="menustyle.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
   </body>
 </html>
