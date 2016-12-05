@@ -23,28 +23,33 @@
 <body>
     <!--start header-->
 
-    <header>
-        <img id="logo-nav" src="images/off-the-vine-02.png">
+<header>
+<img id="logo-nav" src="images/off-the-vine-02.png">
 
-        <!-- This is your navigation menu trigger.  It only shows for small screens.  You can style it any way you want, including as a hamburger menu.-->
-        <!-- This includes hamburger code from Erik Terwan: http://codepen.io/terwanerik/pen/EVzeRP -->
+<!-- This is your navigation menu trigger.  It only shows for small screens.  You can style it any way you want, including as a hamburger menu.-->
+<!-- This includes hamburger code from Erik Terwan: http://codepen.io/terwanerik/pen/EVzeRP -->
 
+<a href="#menu" class="menu-link">
+	<div class="menu-link__hamburger">
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+</a>
 
+<nav id="menu" role="navigation">
+			<ul>
+				<li><a href="#">home</a></li>
+				<li><a href="#">our story</a></li>
+				<li><a href="#">events</a></li>
+        <li><a href="#"><img id="logo-nav" src="images/off-the-vine-02.png"></a></li>
+				<li><a href="#">menu</a></li>
+				<li><a href="#">contact</a></li>
+        <li><a href="#">cart</a></li>
+			</ul>
+</nav>
+</header>
 
-        <nav id="menu" role="navigation">
-            <ul>
-                <li><a href="#">home</a></li>
-                <li><a href="#">our story</a></li>
-                <li><a href="#">events</a></li>
-                <li>
-                    <a href="#"><img id="logo-nav" src="images/off-the-vine-02.png"></a>
-                </li>
-                <li><a href="#">menu</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#">cart</a></li>
-            </ul>
-        </nav>
-    </header>
 
 
 
@@ -64,17 +69,15 @@
     <!--end navigation-->
     <main>
         <!--start photo-->
+        <div style="text-align: center">
+            <div class="textoverlay">
 
-        <section class="hero-image">
-            <div class="hero-image_container">
-                <div class="hero-image_text">
+                <img class="main" src="images/mainphoto_2.jpg" alt="Wine Glasses">
+                <div class="mainphototext">
 
-                    <center>
-                        <h3> EXPERIENCE</h3><br>
-                        <h2> the WINERY & <br> VINEYARDS</h2>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!--end photo-->
 
@@ -124,30 +127,30 @@
     <!--start footer-->
     <footer class="site-footer">
 
-        <h5>Hours of Operations</h5>
-        <ul>
-            <li> Main Season:</li>
-            <li> Wednesday: Noon-4:00pm</li>
-            <li> Thursday: Noon-8:00pm </li>
-            <li> Friday: Noon-10:00pm</li>
-            <li> Saturday: Noon-10:00pm</li>
-            <li>Sunday: Noon-5:00pm</li>
-        </ul>
+            <h5>Hours of Operations</h5>
+            <ul>
+                <li> Main Season:</li>
+                <li> Wednesday: Noon-4:00pm</li>
+                <li> Thursday: Noon-8:00pm </li>
+                <li> Friday: Noon-10:00pm</li>
+                <li> Saturday: Noon-10:00pm</li>
+                <li>Sunday: Noon-5:00pm</li>
+            </ul>
         </div>
 
         <div class="logo-footer"><img src="images/off-the-vine-footer.png"></div>
 
-        <h5>Contact</h5>
-        <dl>
-            <dt>Address: </dt>
-            <dd>Off The Vine Winery</dd>
-            <dd>1700 55th Street NE</dd>
-            <dd>Canton, OH 44721</dd>
-            <dt>Phone:</dt>
-            <dd>330.669.0868</dd>
-            <dt>Email:</dt>
-            <dd><a href="mailto:offthevine@gmail.com">offthevine@gmail.com</a></dd>
-        </dl>
+                <h5>Contact</h5>
+                <dl>
+                    <dt>Address: </dt>
+                    <dd>Off The Vine Winery</dd>
+                    <dd>1700 55th Street NE</dd>
+                    <dd>Canton, OH 44721</dd>
+                    <dt>Phone:</dt>
+                    <dd>330.669.0868</dd>
+                    <dt>Email:</dt>
+                    <dd><a href="mailto:offthevine@gmail.com">offthevine@gmail.com</a></dd>
+                </dl>
 
     </footer>
 
@@ -159,7 +162,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="templates/navbr.js"></script>
+    <script src="templates/script.js"></script>
 
 </body>
 

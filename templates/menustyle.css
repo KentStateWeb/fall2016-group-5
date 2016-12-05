@@ -27,6 +27,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+
 }
 
 nav a {
@@ -48,66 +49,6 @@ nav a {
     font-size: 100%;
 }
 
-
-/* hamburger button css*/
-
-a.menu-link {
-    float: right;
-    display: block;
-    padding: 1em;
-}
-
-nav[role=navigation] {
-    clear: both;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.js nav[role=navigation] {
-    overflow: hidden;
-    max-height: 0;
-}
-
-nav[role=navigation].active {
-    max-height: 15em;
-}
-
-nav[role=navigation] ul {
-    margin: 0;
-    padding: 0;
-    border-top: 1px solid #808080;
-}
-
-nav[role=navigation] li a {
-    display: block;
-    padding: 0.8em;
-    border-bottom: 1px solid #808080;
-}
-
-@media screen and (min-width:800px) {
-    a.menu-link {
-        display: none;
-    }
-    .js nav[role=navigation] {
-        max-height: none;
-    }
-    nav[role=navigation] ul {
-        margin: 0 0 0 -0.25em;
-        border: 0;
-    }
-    nav[role=navigation] li {
-        display: inline-block;
-        margin: 0 0.25em;
-    }
-    nav[role=navigation] li a {
-        border: 0;
-    }
-}
-
-
 /* Main */
 
 h1 {
@@ -118,16 +59,6 @@ h1 {
     line-height: 1em;
 }
 
-h2 {
-    font-size: 4em;
-    font-style: italic;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    padding: 0 0 40px 0;
-    width: 60%;
-    line-height: 1em;
-}
 
 h3 {
     font-size: 2em;
@@ -137,19 +68,8 @@ h3 {
     text-align: center;
 }
 
-h4 {
-    font-size: 2em;
-    font-weight: 100;
-    font-style: italic;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-}
 
-h5 {
-    font-size: 1em;
-    font-style: italic;
-}
+
 
 p {
     font-family: 'Roboto Slab', serif;
@@ -161,22 +81,21 @@ p {
     padding: 30px 0 30px 0;
 }
 
-hr {
-    border-color: rgb(83, 18, 17);
-    border-width: 1px;
-    width: 20%;
-}
 
-.paragraph2 {}
+
+
+
 
 
 /* media queries */
 
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 300px) {
     nav ul {
         display: flex;
         justify-content: space-around;
     }
+
+
     h3 {
         font-size: 30px;
         color: rgb(204, 187, 19);
@@ -200,6 +119,20 @@ hr {
         display: inline;
         text-align: left;
     }
+    hr {
+        border-color: rgb(83, 18, 17);
+        border-width: 1px;
+        width: 20%;
+        margin-bottom: 20px;
+    }
+
+    h5{
+      font-family: 'Filson Soft', sans-serif;
+      font-size: 35px;
+      margin: 0 auto;
+      margin-left: 20px;
+      padding-bottom: 25px;
+    }
     .main {
         width: 100%;
         opacity: 0.5;
@@ -209,6 +142,13 @@ hr {
         padding-bottom: 5em;
     }
     .wine-tasting {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    .wine-menu {
         background-size: cover;
         width: 100%;
         height: auto;
@@ -232,118 +172,68 @@ hr {
         display: block;
         font-size: 100%;
     }
-    .menu-descriptions {
+    span.menu-descriptions {
         font-family: 'Roboto Serif', serif;
         font-weight: 100;
         width: 100%;
         color: black;
         display: block;
         font-size: 100%;
-    }
-}
-
-
-}
-@media screen and (min-width: 400px) {
-    nav ul {
-        display: flex;
-        justify-content: space-around;
+        padding-bottom: 1.5em;
     }
 
-    h2 {
-        font-size: 4em;
-        margin: 120px;
-        display: inline;
-        text-align: center;
-        padding: 0 0 40px 0;
-        width: 33%;
-        line-height: 1em;
-    }
-
-    h3 {
-        font-size: 60px;
-        color: rgb(204, 187, 19);
-        margin: 0 auto;
-        display: block;
-        text-align: center;
-    }
-
-    h4 {
+    .menu-heading{
+        font-family: 'Filson Soft', sans-serif;
         font-size: 2em;
         font-weight: 100;
-        margin: 50px;
-        display: inline;
-        text-align: left;
-        margin-top: 3em;
-    }
-
-    .main {
-        width: 100%;
-        opacity: 0.5;
-        background-size: cover;
-        height: auto;
-        position: relative;
-        padding-bottom: 5em;
-    }
-
-    .wine-tasting {
-        background-size: cover;
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding-bottom: 5em;
-    }
-
-    .vineyard-tour {
-        background-size: cover;
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding-bottom: 5em;
-        padding-top: 5em;
-    }
-
-    p {
-        width: 50%;
+        font-style: italic;
         margin: 0 auto;
         display: block;
-        font-size: 12px;
-        padding-bottom: 5em;
-    }
 
-    .wine-tasting-section {
-        position: relative;
-        width: 100%;
     }
-
-    .vineyard-tour-section {
-        position: relative;
-        width: 100%;
-    }
-
-    .sectiontitle-1 {
-        color: white;
-        font-family: 'Roboto Slab', serif;
-        position: absolute;
-        font-size: 15px;
-        top: 5%;
-        left: 10px;
-        width: 100%;
-    }
-
-    footer {
-        background-color: rgb(83, 18, 17);
-        color: #CCB8A3;
-        padding: 3px;
-        height: 250px;
-    }
+footer{
+  background-color: rgb(83, 18, 17);
+  color: #CCB8A3;
+  padding: 3px;
+  height: 500px;
 }
+
+footer ul{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+  font-size: 13px;
+  margin-left: 20px
+
+
+
+
+}
+
+footer img{
+  width: 250px;
+  display:block;
+  margin-left: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+
+
 @media screen and (min-width: 600px) {
     nav ul {
         display: flex;
         justify-content: space-around;
     }
-
+    h2 {
+        font-size: 4em;
+        font-style: italic;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        width: 60%;
+        line-height: 1em;
+    }
     h3 {
         font-size: 40px;
         color: rgb(204, 187, 19);
@@ -406,11 +296,31 @@ hr {
         width: 100%;
     }
 
-    footer {
-        background-color: rgb(83, 18, 17);
-        color: #CCB8A3;
-        padding: 3px;
-        height: 250px;
+    footer{
+      background-color: rgb(83, 18, 17);
+      color: #CCB8A3;
+      padding: 3px;
+      height: 500px;
+
+    }
+
+    footer ul{
+      color: white;
+      font-family: 'Roboto Slab', serif;
+      font-size: 13px;
+      margin-left: 20px
+
+
+
+
+    }
+
+    footer img{
+      width: 25%;
+      display:block;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      justify-content: center;
     }
 }
 @media screen and (min-width: 800px) {
@@ -436,7 +346,6 @@ hr {
         margin: 0 auto;
         display: block;
         text-align: center;
-        padding: 0 0 40px 0;
         width: 60%;
         line-height: 1em;
     }
@@ -449,7 +358,6 @@ hr {
         position: relative;
         padding-bottom: 5em;
     }
-}
 .wine-tasting {
     background-size: cover;
     width: 100%;
@@ -489,7 +397,7 @@ footer {
     height: 250px;
 }
 
-}
+
 @media screen and (min-width: 1200px) {
     p {
         width: 40%;
