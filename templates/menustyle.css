@@ -80,7 +80,7 @@ p {
 
 /* media queries */
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 300px){
     nav ul {
         display: flex;
         justify-content: space-around;
@@ -270,6 +270,23 @@ p {
             left: 20px;
             width: 100%;
         }
+
+        .appetizers {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            width:50%;
+            margin-left: 230px;
+            display: block;
+            font-size: 100%;
+            hyphens: none;}
+
+         .menu-heading {
+                font-family: 'Filson Soft', sans-serif;
+                font-size: 2em;
+                font-weight: 100;
+                font-style: italic;
+                margin-left: 200px;
+                display: block;}
         .menu-items {
             font-family: 'Filson Soft', sans-serif;
             font-weight: 700;
@@ -284,7 +301,7 @@ p {
             width: 100%;
             color: black;
             display: block;
-            font-size: 125%;
+            font-size: 115%;
             padding-bottom: 1.5em;
         }
         footer {
@@ -297,10 +314,10 @@ p {
             color: white;
             font-family: 'Roboto Slab', serif;
             font-size: 13px;
-            margin-left: 20px
+            margin-left: 100px
         }
         footer img {
-            width: 25%;
+            width: 60%;
             display: block;
             padding-top: 50px;
             padding-bottom: 50px;
@@ -370,6 +387,58 @@ p {
             top: 80px;
             left: 100px;
             width: 100%;
+        }
+        .appetizers {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            width:50%;
+            margin-left: 230px;
+            display: block;
+            font-size: 100%;
+            hyphens: none;}
+
+         .menu-heading {
+                font-family: 'Filson Soft', sans-serif;
+                font-size: 2em;
+                font-weight: 100;
+                font-style: italic;
+                margin-left: 200px;
+                display: block;}
+        .menu-items {
+            font-family: 'Filson Soft', sans-serif;
+            font-weight: 700;
+            width: 90%;
+            color: rgb(83, 18, 17);
+            display: block;
+            font-size: 150%;
+        }
+        span.menu-descriptions {
+            font-family: 'Roboto Serif', serif;
+            font-weight: 100;
+            width: 100%;
+            color: black;
+            display: block;
+            font-size: 115%;
+            padding-bottom: 1.5em;
+        }
+        footer {
+            background-color: rgb(83, 18, 17);
+            color: #CCB8A3;
+            padding: 3px;
+            height: 800px;
+        }
+        footer ul {
+            color: white;
+            font-family: 'Roboto Slab', serif;
+            font-size: 13px;
+            margin-left: 100px
+        }
+        footer img {
+            width: 60%;
+            display: block;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            justify-content: center;
         }
         @media screen and (min-width: 1200px) {
             p {
@@ -447,12 +516,7 @@ p {
                 left: 200px;
                 width: 100%;
             }
-            footer {
-                background-color: rgb(83, 18, 17);
-                color: #CCB8A3;
-                padding: 3px;
-                height: 250px;
-            }
+
         }
         @media screen and (min-width: 1400px) {
             .hours {
@@ -471,13 +535,7 @@ p {
                 justify-content: space-between;
                 color: white;
                 font-size: 80%
-            }
-            footer {
-                background-color: rgb(83, 18, 17);
-                color: #CCB8A3;
-                padding: 3px;
-                height: 250px;
-            }
+
             .wine-tasting-section {
                 position: relative;
                 width: 100%;
