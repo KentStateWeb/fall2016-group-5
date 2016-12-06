@@ -1,0 +1,582 @@
+        html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* navigation header */
+
+nav {
+    background-color: rgb(83, 18, 17);
+    color: white;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav ul {
+    list-style-type: none;
+    align-items: center;
+    font-size: 90%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav a {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#logo-nav {
+    width: 125px;
+}
+
+.first-sentence {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100%;
+}
+
+
+/* Main */
+
+h1 {
+    font-size: 4em;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 2em;
+    color: rgb(204, 187, 19);
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    font-size: 20px;
+    padding: 30px 0 30px 0;
+}
+
+
+/* media queries */
+
+@media screen and (min-width: 300px){
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    h3 {
+        font-size: 30px;
+        color: rgb(204, 187, 19);
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        padding-bottom: 2em;
+    }
+    h2 {
+        font-size: 2.5em;
+        margin: 30px;
+        display: inline;
+        text-align: center;
+        width: 33%;
+        line-height: 1em;
+    }
+    h4 {
+        font-size: 25px;
+        font-weight: 100;
+        margin-left: 20px;
+        display: inline;
+        text-align: left;
+    }
+    hr {
+        border-color: rgb(83, 18, 17);
+        border-width: 1px;
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    h5 {
+        font-family: 'Filson Soft', sans-serif;
+        font-size: 35px;
+        margin: 0 auto;
+        margin-left: 20px;
+        padding-bottom: 25px;
+    }
+    .main {
+        width: 100%;
+        opacity: 0.5;
+        background-size: cover;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    .mainphototext{
+      font-family: 'Filson Soft', sans-serif;
+      font-size: 35px;
+      margin: 0 auto;
+      margin-left: 20px;
+      padding-bottom: 25px;
+    }
+    .wine-tasting {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    .wine-menu {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    .appetizers {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 300;
+        width: 90%;
+        margin-left: 20px;
+        display: block;
+        font-size: 100%;
+        hyphens: none;
+    }
+    .menu-items {
+        font-family: 'Filson Soft', sans-serif;
+        font-weight: 700;
+        width: 90%;
+        color: rgb(83, 18, 17);
+        display: block;
+        font-size: 100%;
+    }
+    span.menu-descriptions {
+        font-family: 'Roboto Serif', serif;
+        font-weight: 100;
+        width: 100%;
+        color: black;
+        display: block;
+        font-size: 100%;
+        padding-bottom: 1.5em;
+    }
+    .menu-heading {
+        font-family: 'Filson Soft', sans-serif;
+        font-size: 2em;
+        font-weight: 100;
+        font-style: italic;
+        margin: 0 auto;
+        display: block;
+    }
+    footer {
+        background-color: rgb(83, 18, 17);
+        color: #CCB8A3;
+        padding: 3px;
+        height: 700px;
+    }
+    footer ul {
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 15px;
+        margin-left: 20px
+    }
+    footer img {
+        width: 250px;
+        display: block;
+        margin-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    footer h6 {
+        color: white;
+        margin-left: 20px;
+        font-family: 'Filson Soft', serif;
+        font-size: 20px
+    }
+    @media screen and (min-width: 600px) {
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        h2 {
+            font-size: 4em;
+            font-style: italic;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            width: 60%;
+            line-height: 1em;
+        }
+        h3 {
+            font-size: 40px;
+            color: rgb(204, 187, 19);
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+        .main {
+            width: 100%;
+            opacity: 0.5;
+            background-size: cover;
+            height: auto;
+            position: relative;
+            padding-bottom: 5em;
+        }
+        p {
+            width: 40%;
+            margin: 0 auto;
+            display: block;
+            font-size: 20px;
+            padding-bottom: 5em;
+        }
+        .wine-tasting {
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-bottom: 5em;
+        }
+        .vineyard-tour {
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-bottom: 5em;
+            padding-top: 5em;
+        }
+        .wine-tasting-section {
+            position: relative;
+            width: 100%;
+        }
+        .vineyard-tour-section {
+            position: relative;
+            width: 100%;
+        }
+        .sectiontitle-1 {
+            color: white;
+            font-family: 'Roboto Slab', serif;
+            position: absolute;
+            font-size: 15px;
+            top: 20px;
+            left: 20px;
+            width: 100%;
+        }
+
+        .appetizers {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            width:50%;
+            margin-left: 50%;
+            display: block;
+            font-size: 100%;
+            hyphens: none;}
+
+         .menu-heading {
+                font-family: 'Filson Soft', sans-serif;
+                font-size: 2em;
+                font-weight: 100;
+                font-style: italic;
+                margin-left: 200px;
+                display: block;}
+        .menu-items {
+            font-family: 'Filson Soft', sans-serif;
+            font-weight: 700;
+            width: 90%;
+            color: rgb(83, 18, 17);
+            display: block;
+            font-size: 150%;
+        }
+        span.menu-descriptions {
+            font-family: 'Roboto Serif', serif;
+            font-weight: 100;
+            width: 100%;
+            color: black;
+            display: block;
+            font-size: 115%;
+            padding-bottom: 1.5em;
+        }
+        footer {
+            background-color: rgb(83, 18, 17);
+            color: #CCB8A3;
+            padding: 3px;
+            height: 800px;
+        }
+        footer ul {
+            color: white;
+            font-family: 'Roboto Slab', serif;
+            font-size: 13px;
+            margin-left: 100px
+        }
+        footer img {
+            width: 60%;
+            display: block;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            justify-content: center;
+        }
+    }
+    @media screen and (min-width: 800px) {
+        p {
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+            font-size: 20px;
+            padding-bottom: 5em;
+        }
+        h1 {
+            font-size: 4em;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            line-height: 1em;
+        }
+        h2 {
+            font-size: 4em;
+            font-style: italic;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            width: 60%;
+            line-height: 1em;
+        }
+        .main {
+            width: 100%;
+            opacity: 0.5;
+            background-size: cover;
+            height: auto;
+            position: relative;
+            padding-bottom: 5em;
+        }
+        .wine-tasting {
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-bottom: 5em;
+        }
+        .vineyard-tour {
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-bottom: 5em;
+            padding-top: 5em;
+        }
+        .wine-tasting-section {
+            position: relative;
+            width: 100%;
+        }
+        .vineyard-tour-section {
+            position: relative;
+            width: 100%;
+        }
+        .sectiontitle-1 {
+            color: white;
+            font-family: 'Roboto Slab', serif;
+            position: absolute;
+            font-size: 22px;
+            top: 80px;
+            left: 100px;
+            width: 100%;
+        }
+        .appetizers {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            width:50%;
+            margin-left: 230px;
+            display: block;
+            font-size: 100%;
+            hyphens: none;}
+
+         .menu-heading {
+                font-family: 'Filson Soft', sans-serif;
+                font-size: 2em;
+                font-weight: 100;
+                font-style: italic;
+                margin-left: 200px;
+                display: block;}
+        .menu-items {
+            font-family: 'Filson Soft', sans-serif;
+            font-weight: 700;
+            width: 90%;
+            color: rgb(83, 18, 17);
+            display: block;
+            font-size: 150%;
+        }
+        span.menu-descriptions {
+            font-family: 'Roboto Serif', serif;
+            font-weight: 100;
+            width: 100%;
+            color: black;
+            display: block;
+            font-size: 115%;
+            padding-bottom: 1.5em;
+        }
+        footer {
+            background-color: rgb(83, 18, 17);
+            color: #CCB8A3;
+            padding: 3px;
+            height: 800px;
+        }
+        footer ul {
+            color: white;
+            font-family: 'Roboto Slab', serif;
+            font-size: 13px;
+            margin-left: 100px
+        }
+        footer img {
+            width: 60%;
+            display: block;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            justify-content: center;
+        }
+        @media screen and (min-width: 1200px) {
+            p {
+                width: 40%;
+                margin: 0 auto;
+                display: block;
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 60px;
+                color: rgb(204, 187, 19);
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+            }
+            .main {
+                width: 100%;
+                opacity: 0.5;
+                background-size: cover;
+                height: auto;
+                position: relative;
+                padding-bottom: 5em;
+            }
+            img {
+                margin: 0 auto;
+            }
+            .main {
+                width: 100%;
+                opacity: 0.5;
+                background-size: cover;
+                height: auto;
+                position: relative;
+                padding-bottom: 5em;
+                z-index: -1;
+            }
+            .winetour {
+                width: 100%;
+                background-size: cover;
+                height: auto;
+                position: relative;
+                padding-bottom: 5em;
+                z-index: -1;
+            }
+            .tasting {
+                width: 100%;
+                background-size: cover;
+                height: auto;
+                position: relative;
+                padding-bottom: 5em;
+                z-index: -1;
+            }
+            .wine-tasting-section {
+                position: relative;
+                width: 100%;
+            }
+            .sectiontitle-1 {
+                color: white;
+                font-family: 'Roboto Slab', serif;
+                position: absolute;
+                font-size: 80px;
+                top: 175px;
+                left: 200px;
+                width: 100%;
+            }
+            .vineyard-tour-section {
+                position: relative;
+                width: 100%;
+            }
+            .sectiontitle-2 {
+                color: white;
+                font-family: 'Roboto Slab', serif;
+                position: absolute;
+                font-size: 80px;
+                top: 175px;
+                left: 200px;
+                width: 100%;
+            }
+            .appetizers {
+                font-family: 'Roboto Slab', serif;
+                font-weight: 300;
+                width:50%;
+                margin-left: 4500px;
+                display: block;
+                font-size: 100%;
+                hyphens: none;}
+
+        }
+        @media screen and (min-width: 1400px) {
+            .hours {
+                float: left;
+                padding: 10px;
+                display: flex;
+                flex-direction: row;
+                align-content: space-between;
+                color: white;
+                margin-left: 75px;
+                font-size: 80%
+            }
+            .contact {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                color: white;
+                font-size: 80%
+
+            .wine-tasting-section {
+                position: relative;
+                width: 100%;
+            }
+            .vineyard-tour-section {
+                position: relative;
+                width: 100%;
+            }
+            .sectiontitle-1 {
+                color: white;
+                font-family: 'Roboto Slab', serif;
+                position: absolute;
+                font-size: 40px;
+                top: 175px;
+                left: 200px;
+                width: 100%;
+            }
+        }
+
+
+
+        a.menu-link {
+  	    float: right;
+		    display: block;
+		    padding: 1em;
+			  width: 125px;
+		}
+
+/* Adds Code for Pure CSS Hamburger Button */
