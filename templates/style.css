@@ -179,16 +179,30 @@ hr {
         left: 10px;
         width: 100%;
     }
-
-
-
-
-
     footer {
         background-color: rgb(83, 18, 17);
         color: #CCB8A3;
         padding: 3px;
-        height: 250px;
+        height: 700px;
+    }
+    footer ul {
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 15px;
+        margin-left: 20px
+    }
+    footer img {
+        width: 250px;
+        display: block;
+        margin-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    footer h6 {
+        color: white;
+        margin-left: 20px;
+        font-family: 'Filson Soft', serif;
+        font-size: 20px
     }
 }
 
@@ -255,7 +269,20 @@ hr {
         background-color: rgb(83, 18, 17);
         color: #CCB8A3;
         padding: 3px;
-        height: 250px;
+        height: 800px;
+    }
+    footer ul {
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 13px;
+        margin-left: 100px
+    }
+    footer img {
+        width: 60%;
+        display: block;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        justify-content: center;
     }
 }
 
@@ -331,11 +358,25 @@ hr {
     width: 100%;
 }
 
+}
 footer {
     background-color: rgb(83, 18, 17);
     color: #CCB8A3;
     padding: 3px;
-    height: 250px;
+    height: 800px;
+}
+footer ul {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    margin-left: 100px
+}
+footer img {
+    width: 60%;
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
 }
 
 @media screen and (min-width: 1200px) {
@@ -413,33 +454,4 @@ footer {
         top: 175px;
         left: 200px;
         width: 100%;
-    }
-    footer {
-        background-color: rgb(83, 18, 17);
-        color: #CCB8A3;
-        padding: 3px;
-        height: 250px;
-    }
-    .hours {
-        padding: 0;
-        margin: 0;
-        width: 33%;
-        display: inline-flex;
-        align-content: space-between;
-    }
-    .contact {
-        padding: 0;
-        margin: 0;
-        width: 33%;
-        display: inline-flex;
-        align-content: space-between;
-    }
-    .logo-footer {
-        width: 33%;
-        display: inline-block;
-    }
-    .logo-footer img {
-        max-width: 100px;
-        padding: 0;
-        margin: 0;
     }
