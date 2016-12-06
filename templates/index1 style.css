@@ -177,6 +177,14 @@ nav[role=navigation] {
   font-style: italic;
   font-weight: 100;
 }
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
 nav ul{
   background-color:  rgb(83, 18, 17);
 }
