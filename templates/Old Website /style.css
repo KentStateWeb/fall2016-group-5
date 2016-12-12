@@ -57,6 +57,44 @@ hr {
 
 /*main */
 
+/*Learn More Button*/
+
+a.learn-more{
+  link-style:none;
+  Text-decoration:none;
+  border-width: 2px;
+  border-style: solid;
+  padding:15px 40px 15px 40px;
+  border-color:white;
+  border-radius:10px;
+	font-family: Filson Soft, Sans Serif;
+	font-weight: 500;
+	position: relative;
+	width: 100%;
+}
+
+/* unvisited link */
+a.learn-more:link {
+    color: white;
+}
+
+/* visited link */
+a.learn-more:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+/* mouse over link */
+a.learn-more:hover {
+    color: rgb(83, 18, 17);
+}
+
+/* selected link */
+a.learn-more:active {
+    color: rgb(83, 18, 17);
+}
+
+
 
 /* Main */
 
@@ -117,8 +155,109 @@ hr {
     width: 20%;
 }
 
+<<<<<<< Updated upstream
 /* media queries */
 
+=======
+
+
+			footer {
+				background-color: rgb(83, 18, 17);
+				color: #CCB8A3;
+				padding: 5px;
+				height: 250px;
+
+			}
+			.hours {
+				padding: 0;
+				margin: 0;
+				width: 33%;
+				display: inline-flex;
+				align-content: space-between;
+			}
+			.contact {
+				padding: 0;
+				margin: 0;
+				width: 33%;
+				display: inline-flex;
+				align-content: space-between;
+			}
+			.logo-footer {
+				width: 100%;
+				display: inline-block;
+
+			}
+			.logo-footer img {
+				max-width: 100px;
+				padding: 0;
+				margin: 0;
+		}
+
+
+/* media queries */
+
+@media screen and (min-width: 200px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+    h3 {
+        font-size: 40px;
+        color: rgb(204, 187, 19);
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    .main {
+        width: 100%;
+        opacity: 0.5;
+        background-size: cover;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    .wine-tasting {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    .vineyard-tour {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+        padding-top: 5em;
+    }
+    p {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        font-size: 10px;
+        padding-bottom: 5em;
+    }
+    .wine-tasting-section {
+        position: relative;
+        width: 100%;
+    }
+    .vineyard-tour-section {
+        position: relative;
+        width: 100%;
+    }
+    .sectiontitle-1 {
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        position: absolute;
+        font-size: 3px;
+        top: 2px;
+        left: 2px;
+        width: 100%;
+    }
+
+}
+>>>>>>> Stashed changes
 
 @media screen and (min-width: 400px) {
     nav ul {
@@ -455,3 +594,72 @@ footer img {
         left: 200px;
         width: 100%;
     }
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+    footer {
+        background-color: rgb(83, 18, 17);
+        color: #CCB8A3;
+        padding: 3px;
+        height: 250px;
+    }
+=======
+
+		footer {
+			background-color: rgb(83, 18, 17);
+			color: #CCB8A3;
+			padding: 3px;
+			height: 250px;
+		}
+		.hours {
+			padding: 0;
+			margin: 0;
+			width: 33%;
+			display: inline-flex;
+			align-content: space-between;
+		}
+		.contact {
+			padding: 0;
+			margin: 0;
+			width: 33%;
+			display: inline-flex;
+			align-content: space-between;
+		}
+		.logo-footer {
+			width: 33%;
+			display: inline-block;
+
+		}
+		.logo-footer img {
+			max-width: 100px;
+			padding: 0;
+			margin: 0;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+>>>>>>> Stashed changes
+    .hours {
+        padding: 0;
+        margin: 0;
+        width: 33%;
+        display: inline-flex;
+        align-content: space-between;
+    }
+    .contact {
+        padding: 0;
+        margin: 0;
+        width: 33%;
+        display: inline-flex;
+        align-content: space-between;
+    }
+    .logo-footer {
+        width: 33%;
+        display: inline-block;
+    }
+    .logo-footer img {
+        max-width: 100px;
+        padding: 0;
+        margin: 0;
+    }
+>>>>>>> Stashed changes
