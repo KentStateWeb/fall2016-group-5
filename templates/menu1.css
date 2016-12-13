@@ -345,6 +345,17 @@ nav[role=navigation] li a {
     width: 100%;
     padding-bottom: 80px;
 }
+
+h5 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    font-weight: 100;
+    font-style: italic;
+}
 }
 
 @media screen and (min-width:800px) {
@@ -409,6 +420,7 @@ nav[role=navigation] li a {
         margin-left: 10%;
         max-width: 100%
     }
+    /* Footer Code */
     footer {
         height: auto;
         display: flex;
@@ -435,6 +447,17 @@ nav[role=navigation] li a {
         margin: 2% 0 2% 0;
         padding: 5%;
     }
+    h5 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        color: white;
+        margin: 0 auto;
+        display: block;
+        text-align: left;
+        font-weight: 100;
+        font-style: italic;
+    }
+
 }
 
 @media screen and (min-width:1000px) {

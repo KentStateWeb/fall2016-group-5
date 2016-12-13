@@ -87,12 +87,12 @@ nav[role=navigation] {
     nav[role=navigation] ul {
         margin: 0;
         padding: 0;
-        border-top: 1px solid #808080;
+
     }
     nav[role=navigation] li a {
         display: block;
         padding: 0.8em;
-        border-bottom: 1px solid #808080;
+
     }
 
     @media screen and (min-width:800px) {
@@ -194,6 +194,27 @@ footer ul {
     line-height: 1.5em;
     padding: 0;
 }
+/* unvisited link */
+
+a:link {
+    color: white;
+}
+/* visited link */
+
+a:visited {
+    color: white;
+}
+/* mouse over link */
+
+a:hover {
+    color: rgb(204, 184, 163);
+    ;
+}
+/* selected link */
+
+a:active {
+    color: white;
+}
 
 @media screen and (min-width:300px) {
 
@@ -205,11 +226,17 @@ width:100px;
 padding: 2%;
 }
 
+#logo-list {
+    display: none;
+}
+
 #of-the{
 font-family: 'Roboto Slab', Serif;
 font-style: italic;
 font-weight: 100;
 }
+
+
 
 header {
   background-color: white;
@@ -268,6 +295,7 @@ font-size: 100%;
 
 h1{
   font-size: 20px;
+  width: 75%;
 }
 
 hr {
@@ -286,9 +314,18 @@ text-align: center;
 }
 
 h2 {
-  margin-left: 33%;
-  font-size: 20px;
-}
+  color: black;
+    margin: 0 auto;
+    font-size: 150%;
+    border-bottom: 1px;
+    border-color: rgb(83, 18, 17);
+    width: 75%;
+    margin-bottom: 5%
+  }
+
+  h4{
+    color: rgb(83, 18, 17);
+  }
 p {
 width: 75%;
 margin: 0 auto;
@@ -341,7 +378,7 @@ ul{
 color: white;
 font-family: 'Roboto Slab', serif;
 font-size: 80%;
-font-style: 100;
+font-weight: 300;
 list-style-type: none;
 margin: 0 auto;
 }
@@ -366,7 +403,6 @@ font-weight: 100;
 width: 80%;
 }
 
-/* Footer Code */
 footer {
     height: auto;
 }
@@ -387,6 +423,26 @@ footer {
     padding-bottom: 80px;
 }
 
+ul{
+align-items: center;
+color: white;
+font-family: 'Roboto Slab', serif;
+font-size: 80%;
+font-weight: 300;
+list-style-type: none;
+margin: 0 auto;
+}
+
+h5 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    font-weight: 100;
+    font-style: italic;
+}
 }
 
 @media screen and (min-width:800px) {
@@ -395,6 +451,9 @@ footer {
 display: block;
 width: 125px;
 padding: 5%;
+}
+#logo-list {
+    display: block;
 }
 
 nav {
@@ -440,8 +499,27 @@ margin: 0 auto;
 display: block;
 text-align: center;
 }
+.dinner-for-two h4{
+  margin: 0 auto;
+color:white;
+font-weight: 100;
+width: 50%;
+  font-size: 115%;
+}
+h2 {
+  color: black;
+    margin: 0 auto;
+    font-size: 225%;
+    border-bottom: 1px;
+    border-color: rgb(83, 18, 17);
+    width: 75%;
+    margin-bottom: 5%
+  }
 
-
+  h4{
+    color: rgb(83, 18, 17);
+    font-size: 125%;
+  }
 
 p {
 
@@ -491,7 +569,6 @@ h5 {
     font-weight: 100;
     font-style: italic;
 }
-
 
 }
 

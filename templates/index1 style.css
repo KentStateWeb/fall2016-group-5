@@ -360,6 +360,16 @@
             width: 100%;
             padding-bottom: 80px;
         }
+
+        ul{
+        align-items: center;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 80%;
+        font-weight: 300;
+        list-style-type: none;
+        margin: 0 auto;
+        }
     }
 
     @media screen and (min-width:800px) {
