@@ -129,7 +129,6 @@ nav[role=navigation] {
         /*hero image */
         .main {
             width: 100%;
-            opacity: 0.5;
             background-size: cover;
             height: auto;
             position: relative;
@@ -160,7 +159,41 @@ nav[role=navigation] {
         }
 }
 
+footer {
+    background-color: rgb(83, 18, 17);
+}
 
+.logo-footer {
+    width: 100%;
+}
+
+.logo-footer img {
+    width: 100%;
+    min-width: 200px;
+}
+
+.hours {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+footer ul {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 100%;
+    font-style: 100;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 0;
+}
 
 @media screen and (min-width:300px) {
 
@@ -201,7 +234,7 @@ text-decoration: none;
 /*photos */
 .main {
     width: 100%;
-    opacity: 0.5;
+
     background-size: cover;
     height: auto;
     position: relative;
@@ -268,30 +301,8 @@ margin-left: 10%;
 max-width: 80%
 }
 
-.headings{
-  margin-left: 13%;
-}
-footer{
-background-color:  rgb(83, 18, 17);
-height: auto;
-}
-
-.logo-footer img{
-width:33%;
-margin-left: 25%;
-padding: 10%;
-}
-
-.hours{
-width:100%;
-margin-left: 15%;
-padding: 5%;
-}
-
-.contact{
-width:100%;
-margin-left: 15%;
-padding: 5%;
+.headings h1{
+margin: 0 auto;
 }
 
 .appetizers{
@@ -334,6 +345,48 @@ font-style: 100;
 list-style-type: none;
 margin: 0 auto;
 }
+
+.dinner-for-two{
+  background-color: rgb(235, 162, 75);
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.dinner-for-two hr{
+border-color:white;
+}
+.dinner-for-two h3{
+color:white;
+width:80%;
+}
+.dinner-for-two h4{
+  margin: 0 auto;
+color:white;
+font-weight: 100;
+width: 80%;
+}
+
+/* Footer Code */
+footer {
+    height: auto;
+}
+.logo-footer {
+    width: 40%;
+    padding: 40px 0 50px 0;
+    margin: 0 auto;
+}
+.logo-footer img {
+    min-width: 150px;
+}
+.hours {
+    width: 100%;
+    padding-bottom: 40px;
+}
+.contact {
+    width: 100%;
+    padding-bottom: 80px;
+}
+
 }
 
 @media screen and (min-width:800px) {
@@ -391,8 +444,7 @@ text-align: center;
 
 
 p {
-width: 80%;
-margin: 0 auto;
+
 display: block;
 font-size: 20px;
 padding-bottom: 3em;
@@ -402,35 +454,82 @@ hyphens: none;
 margin-left: 10%;
 max-width: 100%
 }
-footer{
-background-color:  rgb(83, 18, 17);
-height: auto;
+/* Footer Code */
+footer {
+    height: auto;
+    display: flex;
+}
+.logo-footer {
+    width: 33%;
+    padding: 5%;
+}
+.logo-footer img {
+    width: 100%;
+    padding-top: 30%;
+    max-width: 400px;
+}
+.hours {
+    width: 33%;
+    padding: 5%;
+    margin: 2% 0 2% 0;
+}
+.hour ul {
+    width: 100px;
+}
+.contact {
+    width: 33%;
+    margin: 2% 0 2% 0;
+    padding: 5%;
+}
+h5 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    text-align: left;
+    font-weight: 100;
+    font-style: italic;
 }
 
-.logo-footer img{
-width:50%;
-margin-left: 20%;
-padding: 10%;
+
 }
 
-.hours{
-width:100%;
-margin-left: 20%;
-margin-bottom: 20px;
+@media screen and (min-width:1000px) {
+    .logo-footer img {
+        width: 100%;
+        padding-top: 15%;
+        max-width: 400px;
+    }
+    h3 {
+        font-size: 3em;
+        color: rgb(204, 184, 163);
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    h5 {
+        font-size: 25px;
+        line-height: 1.25em;
+    }
 }
 
-.contact{
-width:100%;
-margin-left: 20%;
-margin-bottom: 2%;
-}
-ul{
-color: white;
-font-family: 'Roboto Slab', serif;
-font-size: 100%;
-font-style: 100;
-list-style-type: none;
-margin: 0 auto;
-}
-
+@media screen and (min-width:1500px) {
+    .logo-footer img {
+        width: 100%;
+        padding-top: 5%;
+        max-width: 400px;
+    }
+    .hours {
+        width: 33%;
+        padding: 5%;
+        margin: 2% 0 2% 0;
+        font-size: 1.15em;
+    }
+    .contact {
+        width: 33%;
+        margin: 2% 0 2% 0;
+        padding: 5%;
+        font-size: 1.15em;
+    }
 }
