@@ -294,8 +294,9 @@ font-size: 100%;
 }
 
 h1{
-  font-size: 20px;
+  font-size: 150%;
   width: 75%;
+  padding-bottom: 2%;
 }
 
 hr {
@@ -319,18 +320,21 @@ h2 {
     font-size: 150%;
     border-bottom: 1px;
     border-color: rgb(83, 18, 17);
-    width: 75%;
+    width: 85%;
     margin-bottom: 5%
   }
 
   h4{
     color: rgb(83, 18, 17);
+    font-size: 100%;
+    width: 80%;
+
   }
 p {
 width: 75%;
 margin: 0 auto;
 display: block;
-font-size: 12px;
+font-size: 80%;
 padding-bottom: 3em;
 }
 .paragraph {
