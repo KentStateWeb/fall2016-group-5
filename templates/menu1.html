@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Off the Vine</title>
     <meta name="description" content="Off the Vine Winery and Dining Experience">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
+    </style>
   </head>
 
-<header>
-<img id="mobile-logo" src= "images/off-the-vine.svg">
-<!-- This is your navigation menu trigger.  It only shows for small screens.  You can style it any way you want, including as a hamburger menu.-->
-<!-- This includes hamburger code from Erik Terwan: http://codepen.io/terwanerik/pen/EVzeRP -->
-<a href="#menu" class="menu-link">
-    <div class="menu-link__hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div class="menu-link__label"></div>
-</a>
+  <header>
+  <img id="mobile-logo" src= "images/Logo-Red.png">
+  <!-- This is your navigation menu trigger.  It only shows for small screens.  You can style it any way you want, including as a hamburger menu.-->
+  <!-- This includes hamburger code from Erik Terwan: http://codepen.io/terwanerik/pen/EVzeRP -->
+  <a href="#menu" class="menu-link">
+      <div class="menu-link__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+      <div class="menu-link__label"></div>
+  </a>
 
-<nav id="menu" role="navigation">
-            <ul>
-                <li><a href="index1.html">home</a></li>
-                <li><a href="#">our story</a></li>
-                <li><a href="#">events</a></li>
-                <li><a href="#"><img id="logo-nav" src="images/off-the-vine-02.png"></a></li>
-                <li><a href="menu1.html">menu</a></li>
-                <li><a href="#">contact</a></li>
-                <li><a href="#"> cart</a></li>
+  <nav id="menu" role="navigation">
+              <ul>
+  <li id="logo-list"><a href="#"><img id="logo-nav" src="images/off-the-vine-02.png"></a></li>
+                  <li><a href="index1.html">home</a></li>
+                  <li><a href="">our story</a></li>
+                  <li><a href="events1.html">events</a></li>
+                  <li><a href="menu1.html">menu</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li><a href="#"> cart</a></li>
 
-            </ul>
-</nav>
-</header>
+              </ul>
+  </nav>
+  </header>
 
 
 
@@ -59,9 +62,12 @@
 
       <img class="wine-tasting" src="images/mainphoto_6.jpg" alt="wine being poured" />
 
+<section class="food-wine-menu">
+<div class="food-wine-headings">
+  <center><h2>FOOD MENU</h2></center>
+  </div>
 
-<h2>FOOD MENU</h2>
-      <hr>
+
       <div class="appetizers">
 
           <ul><span class="menu-items">Cheese Board:$12.25</span></ul>
@@ -102,12 +108,11 @@
         </div>
 
         <!--end photo-->
+<div class="food-wine-headings">
+        <center><h2>WINE MENU</h2></center>
 
-        <h2>WINE MENU</h2>
-        <hr>
-        <div class="menu-heading">
-            <h5>The Reds</h5>
-        </div>
+      </div>
+
         <div class="appetizers">
 
             <ul><span class="menu-items">Chambourcin 2013: $14.99</span></ul>
@@ -144,9 +149,7 @@
 
         </div>
 
-        <div class="menu-heading">
-            <h5>The Whites</h5>
-        </div>
+
         <div class="appetizers">
 
             <ul><span class="menu-items">Josephine 2012: $16.99</span></ul>
@@ -188,7 +191,13 @@
 
 
         <!--end photo-->
-
+        <hr>
+        <div class="paragraph">
+        <p> If for some reason we don't have a wine you love, let us know and we can order it special.
+          It will take one standard business week for special orders to arrive at our winery. Feel free to email us and let us know if there's anything you can't live without.
+        </p>
+        <hr>
+      </div>
 
     </body>
 </main>
@@ -200,10 +209,12 @@
 
 <div class="logo-footer"><img src="images/off-the-vine-footer.png"></div>
 
+
 <div class="hours">
 
           <ul>
-              <li> Hours</li>
+              <li> <h5> Hours <h5> </li>
+              <br>
               <li> Wednesday: Noon-4:00pm</li>
               <li> Thursday: Noon-8:00pm </li>
               <li> Friday: Noon-10:00pm</li>
@@ -218,18 +229,17 @@
 <div class="contact">
 
   <ul>
-      <li> Off The Vine Winery</li>
+      <li><h5> Off The Vine Winery <h5></li>
+      <br>
       <li> 1700 55th Street NE</li>
       <li> Canton, OH 44721 </li>
       <li> 330.669.0868</li>
-      <li> Saturday: Noon-10:00pm</li>
-      <li>Sunday: Noon-5:00pm</li>
+      <br>
+
   </ul>
   </div>
 
-  </footer>
-
-<!--end footer-->
+  </footer><!--end footer-->
       <link href="menu1.css" rel="stylesheet" type="text/css" media="screen" /> <!-- Add your stylesheet here, before the closing HTML tag -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 

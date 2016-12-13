@@ -3,427 +3,504 @@ margin: 0;
 padding: 0;
 }
 
+
 a.menu-link {
     float: right;
-        display: block;
-        padding: 1em;
-          width: 125px;
-    }
+    display: block;
+    padding: 1em;
+    width: 125px;
+}
+
+
+/* Footer Code */
+
+
+/* Footer Code */
+
+footer {
+    background-color: rgb(83, 18, 17);
+}
+
+.logo-footer {
+    width: 100%;
+}
+
+.logo-footer img {
+    width: 100%;
+    min-width: 200px;
+}
+
+.hours {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.contact {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+footer ul {
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 100%;
+    font-style: 100;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.5em;
+    padding: 0;
+}
+
 
 /* Adds Code for Pure CSS Hamburger Button */
 
 .menu-link__hamburger {
-margin: 0 auto;
-text-align: center;
-width: 33px;
-float: right;
-transform: translate(0,0);
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    margin: 0 auto;
+    text-align: center;
+    width: 33px;
+    float: right;
+    transform: translate(0, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
 .menu-link__label {
-float: left;
-padding-left: .75em;
+    float: left;
+    padding-left: .75em;
 }
 
 a.menu-link span {
-display: block;
-height: 5px;
-margin-bottom: 5px;
-position: relative;
-background: #cdcdcd;
-border-radius: 3px; /* Adjust the rounding of the hamburger here */
-z-index: 1;
-transform-origin: 4px 0px;
-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-          background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-          opacity 0.55s ease;
+    display: block;
+    height: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    /* Adjust the rounding of the hamburger here */
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
 }
 
 a.menu-link span:first-child {
-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
 }
 
-
 a.menu-link span:nth-child(3) {
-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
 }
 
 .menu-link.active .menu-link__hamburger {
-transform: translate(10px, 0);
+    transform: translate(10px, 0);
 }
 
 .menu-link.active span {
-opacity: 1;
-background: black;
-transform: rotate(45deg) translate(-2px, -1px);
+    opacity: 1;
+    background: black;
+    transform: rotate(45deg) translate(-2px, -1px);
 }
 
 .menu-link.active span:nth-child(2) {
-opacity: 0;
-transform: rotate(0deg) scale(0.2, 0.2);
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.menu-link.active span:nth-child(3){
-opacity: 1;
-transform: rotate(-45deg) translate(0, -1px);
+.menu-link.active span:nth-child(3) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
 }
 
 nav[role=navigation] {
-        clear: both;
-        -webkit-transition: all 0.3s ease-out;
-        -moz-transition: all 0.3s ease-out;
-        -ms-transition: all 0.3s ease-out;
-        -o-transition: all 0.3s ease-out;
-        transition: all 0.3s ease-out;
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.js nav[role=navigation] {
+    overflow: hidden;
+    max-height: 0;
+}
+
+nav[role=navigation].active {
+    max-height: 15em;
+}
+
+nav[role=navigation] ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav[role=navigation] li a {
+    display: block;
+    padding: 0.8em;
+}
+
+@media screen and (min-width:800px) {
+    a.menu-link {
+        display: none;
     }
     .js nav[role=navigation] {
-        overflow: hidden;
-        max-height: 0;
-    }
-    nav[role=navigation].active {
-        max-height: 15em;
+        max-height: none;
     }
     nav[role=navigation] ul {
-        margin: 0;
-        padding: 0;
-        border-top: 1px solid #808080;
+        margin: 0 0 0 -0.25em;
+        border: 0;
+    }
+    nav[role=navigation] li {
+        display: inline-block;
+        margin: 0 0.25em;
     }
     nav[role=navigation] li a {
-        display: block;
-        padding: 0.8em;
-        border-bottom: 1px solid #808080;
+        border: 0;
     }
-
-    @media screen and (min-width:800px) {
-        a.menu-link {
-           display: none;
-        }
-        .js nav[role=navigation] {
-            max-height: none;
-        }
-        nav[role=navigation] ul {
-            margin: 0 0 0 -0.25em;
-            border: 0;
-        }
-
-        nav[role=navigation]  li {
-            display: inline-block;
-            margin: 0 0.25em;
-        }
-        nav[role=navigation] li a {
-            border: 0;
-        }
-
-        /*header */
-
-        header {
-            background-color: rgb(83, 18, 17);
-        }
-
-        #mobile-logo{
-          width:100px;
-          padding: 2%;
-          display: none;
-        }
-        /*hero image */
-        .main {
-            width: 100%;
-            opacity: 0.5;
-            background-size: cover;
-            height: auto;
-            position: relative;
-            padding-bottom: 5em;
-        }
-        /*wine tasting */
-        .wine-tasting {
-            width: 100%;
-            background-size: cover;
-            height: auto;
-            position: relative;
-            padding-bottom: 5em;
-        }
-        .wine-tasting {
-            background-size: cover;
-            width: 100%;
-            height: auto;
-            position: relative;
-            padding-bottom: 5em;
-        }
-        .vineyard-tour {
-            background-size: cover;
-            width: 100%;
-            height: auto;
-            position: relative;
-            padding-bottom: 5em;
-            padding-top: 5em;
-        }
+    /*header */
+    header {
+        background-color: rgb(83, 18, 17);
+    }
+    #mobile-logo {
+        width: 100px;
+        padding: 2%;
+        display: none;
+    }
+    /*hero image */
+    .main {
+        width: 100%;
+        background-size: cover;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+        padding-top: 90px;
+    }
+    /*wine tasting */
+    .wine-tasting {
+        width: 100%;
+        background-size: cover;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    .wine-tasting {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    .vineyard-tour {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+        padding-top: 5em;
+    }
+    #mobile-logo {
+        width: 100px;
+        padding: 2%;
+        display: none;
+    }
 }
-
-
 
 @media screen and (min-width:300px) {
+    #logo-nav {
+        display: none;
+    }
+    #mobile-logo {
+        width: 100px;
+        padding: 2%;
+    }
+    #of-the {
+        font-family: 'Roboto Slab', Serif;
+        font-style: italic;
+        font-weight: 100;
+    }
+    #logo-list {
+        display: none;
+    }
+    header {
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    nav ul {
+        background-color: rgb(83, 18, 17);
+    }
+    nav li a {
+        color: white;
+        font-family: 'Roboto Slab', Serif;
+        text-decoration: none;
+    }
+    /*photos */
+    .main {
+        width: 100%;
+        background-size: cover;
+        height: auto;
+        position: relative;
+        padding-bottom: 10%;
+    }
+    .wine-tasting {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+    .vineyard-tour {
+        background-size: cover;
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+    /*text*/
+    .first-sentence {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 100%;
+    }
+    hr {
+        border-color: rgb(83, 18, 17);
+        border-width: 1px;
+        width: 20%;
+        margin-bottom: 5%;
+    }
+    h3 {
+        font-size: 40px;
+        color: rgb(204, 184, 163);
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    h2 {
+        margin: 0 auto;
+        font-size: 300%;
+        border-bottom: 1px;
+        border-color: rgb(83, 18, 17);
+        width: 80%;
+        margin-bottom: 5%
+    }
+    p {
+        width: 75%;
+        margin: 0 auto;
+        display: block;
+        font-size: 12px;
+        padding-bottom: 3em;
+    }
+    .paragraph {
+        margin-left: 10%;
+        max-width: 80%
+    }
+    .appetizers {
+        margin-left: 5%;
+        max-width: 80%
+    }
+    .menu-items {
+        font-family: 'Filson Soft', sans-serif;
+        font-weight: 700;
+        width: 90%;
+        color: rgb(83, 18, 17);
+        display: block;
+        font-size: 100%;
+    }
+    span.menu-descriptions {
+        font-family: 'Roboto Serif', serif;
+        font-weight: 100;
+        width: 100%;
+        color: black;
+        display: block;
+        font-size: 100%;
+        padding-bottom: 1.5em;
+    }
+    ul {
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 100%;
+        font-style: 100;
+        list-style-type: none;
+        margin: 0 auto;
+    }
 
-#logo-nav{
-display: none;
+    .logo-footer {
+        width: 40%;
+        padding: 40px 0 50px 0;
+        margin: 0 auto;
 }
-#mobile-logo{
-width:100px;
-padding: 2%;
+.logo-footer img {
+    min-width: 150px;
 }
-
-#of-the{
-font-family: 'Roboto Slab', Serif;
-font-style: italic;
-font-weight: 100;
-}
-
-header {
-  background-color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 3;
-}
-
-nav ul{
-background-color:  rgb(83, 18, 17);
-}
-
-nav li a{
-color: white;
-font-family: 'Roboto Slab', Serif;
-text-decoration: none;
-
-}
-
-
-/*photos */
-.main {
+.hours {
+  margin: 0 auto;
     width: 100%;
-    opacity: 0.5;
-    background-size: cover;
-    height: auto;
-    position: relative;
-    padding-bottom: 10%;
+    padding-bottom: 40px;
 }
-.wine-tasting {
-    background-size: cover;
+.contact {
     width: 100%;
-    height: auto;
-    position: relative;
-    padding-bottom: 10%;
-    padding-top: 10%;
-}
-.vineyard-tour {
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding-bottom: 10%;
-    padding-top: 10%;
-}
-
-
-/*text*/
-
-.first-sentence {
-font-weight: 700;
-font-style: italic;
-font-size: 100%;
-}
-
-hr {
-border-color: rgb(83, 18, 17);
-border-width: 1px;
-width: 20%;
-margin-bottom: 5%;
-}
-
-h3 {
-font-size: 40px;
-color: rgb(204, 184, 163);
-margin: 0 auto;
-display: block;
-text-align: center;
-}
-
-h2 {
-  margin-left: 33%;
-  font-size: 20px;
-}
-p {
-width: 75%;
-margin: 0 auto;
-display: block;
-font-size: 12px;
-padding-bottom: 3em;
-}
-.paragraph {
-margin-left: 10%;
-max-width: 80%
-}
-
-footer{
-background-color:  rgb(83, 18, 17);
-height: auto;
-}
-
-.logo-footer img{
-width:33%;
-margin-left: 25%;
-padding: 10%;
-}
-
-.hours{
-width:100%;
-margin-left: 15%;
-padding: 5%;
-}
-
-.contact{
-width:100%;
-margin-left: 15%;
-padding: 5%;
-}
-
-.appetizers{
-  margin-left: 5%;
-  max-width: 80%
-}
-
-.menu-items {
-    font-family: 'Filson Soft', sans-serif;
-    font-weight: 700;
-    width: 90%;
-    color: rgb(83, 18, 17);
-    display: block;
-    font-size: 100%;
-
-}
-span.menu-descriptions {
-    font-family: 'Roboto Serif', serif;
-    font-weight: 100;
-    width: 100%;
-    color: black;
-    display: block;
-    font-size: 100%;
-    padding-bottom: 1.5em;
-}
-.menu-heading {
-    font-family: 'Filson Soft', sans-serif;
-    font-size: 2em;
-    font-weight: 100;
-    font-style: italic;
-    margin-left: 33%;
-    display: block;
-}
-
-ul{
-color: white;
-font-family: 'Roboto Slab', serif;
-font-size: 80%;
-font-style: 100;
-list-style-type: none;
-margin: 0 auto;
+    padding-bottom: 80px;
 }
 }
 
 @media screen and (min-width:800px) {
-/*text*/
-#logo-nav{
-display: block;
-width: 125px;
-padding: 5%;
+    /*text*/
+    #logo-nav {
+        display: block;
+        width: 125px;
+        padding: 5%;
+    }
+    #logo-list {
+        display: block;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 3;
+    }
+    nav ul {
+        list-style-type: none;
+        align-items: center;
+        font-size: 90%;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Roboto Slab', serif;
+    }
+    nav a {
+        font-family: 'Roboto Slab', serif;
+        font-weight: 100;
+        display: block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+    .first-sentence {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 100%;
+    }
+    hr {
+        border-color: rgb(83, 18, 17);
+        border-width: 1px;
+        width: 20%;
+        margin-bottom: 5%;
+    }
+    h3 {
+        font-size: 60px;
+        color: rgb(204, 184, 163);
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    p {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+        font-size: 20px;
+        padding-bottom: 3em;
+        hyphens: none;
+    }
+    .paragraph {
+        margin-left: 10%;
+        max-width: 100%
+    }
+    footer {
+        height: auto;
+        display: flex;
+    }
+    .logo-footer {
+        width: 33%;
+        padding: 5%;
+    }
+    .logo-footer img {
+        width: 100%;
+        padding-top: 30%;
+        max-width: 400px;
+    }
+    .hours {
+        width: 33%;
+        padding: 5%;
+        margin: 2% 0 2% 0;
+    }
+    .hour ul {
+        width: 100px;
+    }
+    .contact {
+        width: 33%;
+        margin: 2% 0 2% 0;
+        padding: 5%;
+    }
 }
 
-nav {
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 3;
-}
-nav ul{
-list-style-type: none;
-align-items: center;
-font-size: 90%;
-display: flex;
-justify-content: space-around;
-font-family: 'Roboto Slab', serif;
+@media screen and (min-width:1000px) {
+    .logo-footer img {
+        width: 100%;
+        padding-top: 15%;
+        max-width: 400px;
+    }
+    h3 {
+        font-size: 3em;
+        color: rgb(204, 184, 163);
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    h5 {
+        font-size: 25px;
+        line-height: 1.25em;
+    }
+
+    .appetizers {
+        margin: 0 auto;
+        max-width: 50%
+    }
+    .menu-items {
+        font-family: 'Filson Soft', sans-serif;
+        font-weight: 700;
+        width: 90%;
+        color: rgb(83, 18, 17);
+        display: block;
+        font-size: 100%;
+    }
+    span.menu-descriptions {
+        font-family: 'Roboto Serif', serif;
+        font-weight: 100;
+        width: 100%;
+        color: black;
+        display: block;
+        font-size: 100%;
+        padding-bottom: 1.5em;
+    }
+    ul {
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        font-size: 150%;
+        font-style: 100;
+        list-style-type: none;
+        margin: 0 a
 }
 
-nav a{
-font-family: 'Roboto Slab', serif;
-font-weight: 100;
-display: block;
-color: white;
-text-align: center;
-text-decoration: none;
-}
-.first-sentence {
-font-weight: 700;
-font-style: italic;
-font-size: 100%;
-}
-
-hr {
-border-color: rgb(83, 18, 17);
-border-width: 1px;
-width: 20%;
-margin-bottom: 5%;
-}
-
-h3 {
-font-size: 60px;
-color:  rgb(204, 184, 163);
-margin: 0 auto;
-display: block;
-text-align: center;
-}
-
-
-
-p {
-width: 80%;
-margin: 0 auto;
-display: block;
-font-size: 20px;
-padding-bottom: 3em;
-hyphens: none;
-}
-.paragraph {
-margin-left: 10%;
-max-width: 100%
-}
-footer{
-background-color:  rgb(83, 18, 17);
-height: auto;
-}
-
-.logo-footer img{
-width:50%;
-margin-left: 20%;
-padding: 10%;
-}
-
-.hours{
-width:100%;
-margin-left: 20%;
-margin-bottom: 20px;
-}
-
-.contact{
-width:100%;
-margin-left: 20%;
-margin-bottom: 2%;
-}
-ul{
-color: white;
-font-family: 'Roboto Slab', serif;
-font-size: 100%;
-font-style: 100;
-list-style-type: none;
-margin: 0 auto;
-}
-
+@media screen and (min-width:1500px) {
+    .logo-footer img {
+        width: 100%;
+        padding-top: 5%;
+        max-width: 400px;
+    }
+    .hours {
+        width: 33%;
+        padding: 5%;
+        margin: 2% 0 2% 0;
+        font-size: 1.15em;
+    }
+    .contact {
+        width: 33%;
+        margin: 2% 0 2% 0;
+        padding: 5%;
+        font-size: 1.15em;
+    }
 }

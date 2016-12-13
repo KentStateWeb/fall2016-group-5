@@ -1,318 +1,173 @@
-    html, body {
-    margin: 0;
-    padding: 0;
-}
+        html, body {
+        margin: 0;
+        padding: 0;
+    }
 
-a.menu-link {
+    a.menu-link {
         float: right;
-            display: block;
-            padding: 1em;
-              width: 125px;
-        }
+        display: block;
+        padding: 1em;
+        width: 125px;
+    }
+    /* Adds Code for Pure CSS Hamburger Button */
 
-/* Adds Code for Pure CSS Hamburger Button */
+    .menu-link__hamburger {
+        margin: 0 auto;
+        text-align: center;
+        width: 33px;
+        float: right;
+        transform: translate(0, 0);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    }
 
+    .menu-link__label {
+        float: left;
+        padding-left: .75em;
+    }
 
-      .menu-link__hamburger {
-          margin: 0 auto;
-          text-align: center;
-          width: 33px;
-          float: right;
-          transform: translate(0,0);
-          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-      }
-
-      .menu-link__label {
-          float: left;
-          padding-left: .75em;
-      }
-
-      a.menu-link span {
+    a.menu-link span {
         display: block;
         height: 5px;
         margin-bottom: 5px;
         position: relative;
         background: #cdcdcd;
-        border-radius: 3px; /* Adjust the rounding of the hamburger here */
+        border-radius: 3px;
+        /* Adjust the rounding of the hamburger here */
         z-index: 100;
         transform-origin: 4px 0px;
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                    opacity 0.55s ease;
-      }
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+    }
 
-      a.menu-link span:first-child {
+    a.menu-link span:first-child {
         transform-origin: 0% 0%;
-      }
+    }
 
-
-      a.menu-link span:nth-child(3) {
+    a.menu-link span:nth-child(3) {
         transform-origin: 0% 100%;
-      }
+    }
 
-      .menu-link.active .menu-link__hamburger {
-          transform: translate(10px, 0);
-      }
+    .menu-link.active .menu-link__hamburger {
+        transform: translate(10px, 0);
+    }
 
-      .menu-link.active span {
+    .menu-link.active span {
         opacity: 1;
-          background: black;
+        background: black;
         transform: rotate(45deg) translate(-2px, -1px);
-      }
+    }
 
-      .menu-link.active span:nth-child(2) {
+    .menu-link.active span:nth-child(2) {
         opacity: 0;
         transform: rotate(0deg) scale(0.2, 0.2);
-      }
+    }
 
-      .menu-link.active span:nth-child(3){
+    .menu-link.active span:nth-child(3) {
         opacity: 1;
         transform: rotate(-45deg) translate(0, -1px);
-      }
+    }
 
-      nav[role=navigation] {
-                  clear: both;
-                  -webkit-transition: all 0.3s ease-out;
-                  -moz-transition: all 0.3s ease-out;
-                  -ms-transition: all 0.3s ease-out;
-                  -o-transition: all 0.3s ease-out;
-                  transition: all 0.3s ease-out;
-              }
-              .js nav[role=navigation] {
-                  overflow: hidden;
-                  max-height: 0;
-              }
-              nav[role=navigation].active {
-                  max-height: 15em;
-              }
-              nav[role=navigation] ul {
-                  margin: 0;
-                  padding: 0;
-                  border-top: 1px solid #808080;
-              }
-              nav[role=navigation] li a {
-                  display: block;
-                  padding: 0.8em;
-                  border-bottom: 1px solid #808080;
-            }
+    nav[role=navigation] {
+        clear: both;
+        -webkit-transition: all 0.3s ease-out;
+        -moz-transition: all 0.3s ease-out;
+        -ms-transition: all 0.3s ease-out;
+        -o-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+    }
 
-/* Text Over Image 1 *//* Text Over Image 1 */
-            .hero-image {
-                height: 90vh;
-                background-image: url(images/mainphoto_2.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                background-position:center;
-            }
+    .js nav[role=navigation] {
+        overflow: hidden;
+        max-height: 0;
+    }
 
-            .hero-image__container {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 100%;
-                background-color: rgba(255,255,255, .25)
-            }
+    nav[role=navigation].active {
+        max-height: 15em;
+    }
 
-            .hero-image-text {
-                z-index: 10;
-                padding: 1em;
-                color: black;
+    nav[role=navigation] ul {
+        margin: 0;
+        padding: 0;
+    }
 
-                font-size: 1.25em;
-                text-align: center;
-            }
+    nav[role=navigation] li a {
+        display: block;
+        padding: 0.8em;
+    }
+    /* Text Over Image 1 */
+    /* Text Over Image 1 */
 
+    .main {
+        width: 100%;
+        background-size: cover;
+        height: auto;
+        position: relative;
+        padding-bottom: 5em;
+    }
+    /* Footer Code */
+    /* Footer Code */
 
-  /* Text Over Image 2 *//* Text Over Image 2 */
-            .hero-image2 {
-                height: 50vh;
-                background-image: url(images/wine-tasting.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                background-position:center;
-            }
+    footer {
+        background-color: rgb(83, 18, 17);
+    }
 
-            .hero-image__container2 {
-                display: flex;
-                align-items: center;
-                justify-content: left;
-                height: 100%;
-                background-color: rgba(0,0,0, .25)
-            }
+    .logo-footer {
+        width: 100%;
+    }
 
-            .hero-image-text2 {
-                z-index: 10;
-                padding: 1em;
-                text-color: rgb(255,255,255);
-                padding-left: 5%;
+    .logo-footer img {
+        width: 100%;
+        min-width: 200px;
+    }
 
-                text-align: left;
-            }
-
-
-
-
-  /* Text Over Image 2 *//* Text Over Image 2 */
-            .hero-image3 {
-                height: 50vh;
-                background-image: url(images/vineyard-tour.jpeg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                background-position:center;
-            }
-
-            .hero-image__container3 {
-                display: flex;
-                align-items: center;
-                justify-content: left;
-                height: 100%;
-                background-color: rgba(0,0,0, .25)
-            }
-
-            .hero-image-text3 {
-                z-index: 10;
-                padding: 1em;
-                text-color: rgb(255,255,255);
-                padding-left: 5%;
-
-                text-align: left;
-            }
-
-/* Wine of the Week */
-            .wine-of-the-week{
-                width:800px;
-                margin: 0 auto;
-                padding-bottom: 40px;
-            }
-
-
-            .WOTW1{
-                padding:10px;
-
-            }
-
-            .WOTW2{
-                padding:10px;
-            }
-
-            .WOTW3{
-              padding:10px;
-
-
-            }
-
-            .wine-of-the-wine3{
-              max-width: 300px;
-            }
-
-            .wine-of-the-week ul{
-              color: black;
-              font-family: 'Roboto Slab', serif;
-              font-size: 1em;
-              font-style: 100;
-              list-style-type: none;
-              display:inline-block;
-              margin: 0 auto;
-              text-align:left;
-              line-height: 1.5em;
-              padding: 20px;
-
-            }
-
-@media screen and (min-width:800px) {
-
-            .wine-of-the-week{
-                width:800px;
-                display:flex;
-            }
-            .wine-of-the-week img{
-                width: 95%;
-
-            }
-            .WOTW1{
-
-              width:33%;
-            }
-            .WOTW2{
-
-              width:33%;
-            }
-            .WOTW3{
-
-              width:33%;
-            }
-}
-
-/* Footer Code *//* Footer Code */
-  footer{
-        background-color:  rgb(83, 18, 17);
-
-      }
-
-      .logo-footer{
-        width:100%;
-      }
-
-      .logo-footer img{
-        width:100%;
-        min-width:200px;
-
-      }
-
-      .hours{
+    .hours {
         margin-bottom: 2%;
-        text-align:center;
-      }
+        text-align: center;
+    }
 
-      .contact{
+    .contact {
         margin-bottom: 2%;
-        text-align:center;
-      }
+        text-align: center;
+    }
 
-      footer ul{
+    footer ul {
         color: white;
         font-family: 'Roboto Slab', serif;
         font-size: 100%;
         font-style: 100;
         list-style-type: none;
-        display:inline-block;
+        display: inline-block;
         margin: 0 auto;
-        text-align:left;
+        text-align: left;
         line-height: 1.5em;
         padding: 0;
+    }
+    /* unvisited link */
 
-      }
+    a:link {
+        color: white;
+    }
+    /* visited link */
 
-      /* unvisited link */
-      a:link {
-          color: white;
-      }
+    a:visited {
+        color: white;
+    }
+    /* mouse over link */
 
-      /* visited link */
-      a:visited {
-          color: grey;
-      }
+    a:hover {
+        color: rgb(204, 184, 163);
+        ;
+    }
+    /* selected link */
 
-      /* mouse over link */
-      a:hover {
-          color: rgb(204, 184, 163);;
-      }
+    a:active {
+        color: white;
+    }
+    /* Footer Code */
+    /* Footer Code */
 
-      /* selected link */
-      a:active {
-          color: white;
-      }
-
-
-/* Footer Code *//* Footer Code */
-
-@media screen and (min-width:800px) {
+    @media screen and (min-width:800px) {
         a.menu-link {
-           display: none;
-
+            display: none;
         }
         .js nav[role=navigation] {
             max-height: none;
@@ -321,106 +176,88 @@ a.menu-link {
             margin: 0 0 0 -0.25em;
             border: 0;
         }
-
-        nav[role=navigation]  li {
+        nav[role=navigation] li {
             display: inline-block;
             margin: 0 0.25em;
         }
         nav[role=navigation] li a {
             border: 0;
         }
-
         /* header */
-
         header {
             background-color: rgb(83, 18, 17);
         }
-
-        #mobile-logo{
-          width:100px;
-          padding: 2%;
-          display: none;
+        #mobile-logo {
+            width: 100px;
+            padding: 2%;
+            display: none;
         }
+    }
 
-
-}
-
-
-
-@media screen and (min-width:300px) {
-
-        #logo-nav{
-          display: none;
+    @media screen and (min-width:300px) {
+        #logo-nav {
+            display: none;
         }
-        #mobile-logo{
-          width:100px;
-          padding: 2%;
+        #logo-list {
+            display: none;
         }
-
-        #of-the{
-          font-family: 'Roboto Slab', Serif;
-          font-style: italic;
-          font-weight: 100;
+        #mobile-logo {
+            width: 100px;
+            padding: 2%;
         }
-
+        #of-the {
+            font-family: 'Roboto Slab', Serif;
+            font-style: italic;
+            font-weight: 100;
+        }
         header {
-          background-color: white;
-          position: fixed;
-          top: 0;
-          width: 100%;
-          z-index: 3;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
         }
-        nav ul{
-          background-color:  rgb(83, 18, 17);
+        nav ul {
+            background-color: rgb(83, 18, 17);
         }
-
-        nav li a{
-          color: white;
-          font-family: 'Roboto Slab', Serif;
-          text-decoration: none;
-
+        nav li a {
+            color: white;
+            font-family: 'Roboto Slab', Serif;
+            text-decoration: none;
         }
-
         .hero-image {
             height: 90vh;
-
-          }
-
+        }
         /*photos */
-            .main {
-                width: 100%;
-                opacity: 0.5;
-                background-size: cover;
-                height: auto;
-                position: relative;
-                padding-bottom: 10%;
-                padding-top: 92px;
-            }
-            .wine-tasting {
-                background-size: cover;
-                width: 100%;
-                height: auto;
-                position: relative;
-                padding-bottom: 10%;
-            }
-            .vineyard-tour {
-                background-size: cover;
-                width: 100%;
-                height: auto;
-                position: relative;
-                padding-bottom: 10%;
-                padding-top: 10%;
-            }
-
-
+        .main {
+            width: 100%;
+            background-size: cover;
+            height: auto;
+            position: relative;
+            padding-bottom: 10%;
+            padding-top: 90px;
+        }
+        .wine-tasting {
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-bottom: 10%;
+        }
+        .vineyard-tour {
+            background-size: cover;
+            width: 100%;
+            height: auto;
+            position: relative;
+            padding-bottom: 10%;
+            padding-top: 10%;
+        }
         /*text*/
-
         .first-sentence {
             font-weight: 700;
             font-style: italic;
             font-size: 100%;
         }
-
         hr {
             border-color: rgb(83, 18, 17);
             border-width: 1px;
@@ -428,32 +265,28 @@ a.menu-link {
             margin-bottom: 5%;
             margin-top: 3%;
         }
-
         h1 {
-          font-size: 4em;
-          color:  black;
-          margin: 0 auto;
-          display: block;
-          text-align: center;
+            font-size: 4em;
+            color: black;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
         }
-
         h2 {
-          font-size: 4em;
-          color:  black;
-          margin: 0 auto;
-          display: block;
-          text-align: center;
+            font-size: 4em;
+            color: black;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
         }
-
         h3 {
             font-size: 35px;
             color: rgb(204, 184, 163);
             margin: 0 auto;
             display: block;
             text-align: center;
-            padding-top:40px;
+            padding-top: 40px;
         }
-
         h4 {
             font-size: 30px;
             color: white;
@@ -461,20 +294,17 @@ a.menu-link {
             display: block;
             text-align: left;
             font-weight: 300;
-            padding-left:10px;
+            padding-left: 10px;
         }
-
-        h5{
-          font-size: 20px;
-          color: white;
-          margin: 0 auto;
-          display: block;
-          text-align: left;
-          font-weight: 100;
-          font-style: italic;
-
+        h5 {
+            font-size: 20px;
+            color: white;
+            margin: 0 auto;
+            display: block;
+            text-align: left;
+            font-weight: 100;
+            font-style: italic;
         }
-
         p {
             width: 100%;
             margin: 0 auto;
@@ -486,114 +316,119 @@ a.menu-link {
             margin-left: 10%;
             max-width: 80%
         }
-
-
-/* Footer Code *//* Footer Code *//* Footer Code *//* Footer Code */
-
-        footer{
-          height: auto;
-
-
+        .wine-of-the-week {
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            padding-bottom: 10%;
         }
-
-        .logo-footer{
-          width:40%;
-          padding:40px 0 50px 0;
-          margin:0 auto;
+        .wine-of-the-week img {
+            width: 95%;
         }
-
-        .logo-footer img{
-          min-width:150px;
-
+        .wine-of-the-week ul {
+            display: none;
         }
-
-        .hours{
-          width:100%;
-          padding-bottom: 40px;
+        .WOTW1 {
+            width: 33%;
         }
-
-        .contact{
-          width:100%;
-          padding-bottom:80px;
+        .WOTW2 {
+            width: 33%;
         }
+        .WOTW3 {
+            width: 33%;
+        }
+        /* Footer Code */
+        /* Footer Code */
+        /* Footer Code */
+        /* Footer Code */
+        footer {
+            height: auto;
+        }
+        .logo-footer {
+            width: 40%;
+            padding: 40px 0 50px 0;
+            margin: 0 auto;
+        }
+        .logo-footer img {
+            min-width: 150px;
+        }
+        .hours {
+            width: 100%;
+            padding-bottom: 40px;
+        }
+        .contact {
+            width: 100%;
+            padding-bottom: 80px;
+        }
+    }
 
-}
-
-
-
-
-@media screen and (min-width:800px) {
+    @media screen and (min-width:800px) {
         /*text*/
-        #logo-nav{
-          display: block;
-          width: 125px;
-          padding: 5%;
+        #logo-nav {
+            display: block;
+            width: 125px;
+            padding: 5%;
         }
-
+        #logo-list {
+            display: block;
+        }
         nav {
-          position: fixed;
-          top: 0;
-          width: 100%;
-          z-index: 3;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 3;
         }
-        nav ul{
-          list-style-type: none;
-          align-items: center;
-          font-size: 90%;
-          display: flex;
-          justify-content: space-around;
-          font-family: 'Roboto Slab', serif;
+        nav ul {
+            list-style-type: none;
+            align-items: center;
+            font-size: 90%;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Roboto Slab', serif;
         }
-
-        nav a{
-          font-family: 'Roboto Slab', serif;
-          font-weight: 100;
-          display: block;
-          color: white;
-          text-align: center;
-          text-decoration: none;
+        nav a {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 100;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
         }
         .first-sentence {
             font-weight: 700;
             font-style: italic;
             font-size: 100%;
         }
-
         hr {
             border-color: rgb(83, 18, 17);
             border-width: 1px;
             width: 20%;
             margin-bottom: 5%;
         }
-
         h1 {
-          font-size: 5em;
-          color:  black;
-          margin: 0 auto;
-          display: block;
-          text-align: center;
-        }
-
-        h2 {
-          font-size: 5em;
-          color:  black;
-          margin: 0 auto;
-          display: block;
-          text-align: center;
-        }
-
-        h3 {
-            font-size: 2.5em;
-            color:  rgb(204, 184, 163);
+            font-size: 5em;
+            color: black;
             margin: 0 auto;
             display: block;
             text-align: center;
         }
-
-
+        h2 {
+            font-size: 5em;
+            color: black;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
+        h3 {
+            font-size: 2.5em;
+            color: rgb(204, 184, 163);
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+        }
         p {
             width: 80%;
-            max-width:800px;
+            max-width: 800px;
             margin: 0 auto;
             display: block;
             font-size: 25px;
@@ -604,94 +439,111 @@ a.menu-link {
             margin-left: 0%;
             max-width: 100%
         }
-
-/* Footer Code *//* Footer Code *//* Footer Code *//* Footer Code */
-
-        footer{
-          height: auto;
-          display:flex;
-
+        @media screen and (min-width:800px) {
+            .wine-of-the-week {
+                margin: 0 auto;
+                width: 80%;
+                display: flex;
+            }
+            .wine-of-the-week img {
+                width: 95%;
+            }
+            .WOTW1 {
+                width: 33%;
+            }
+            .WOTW2 {
+                width: 33%;
+            }
+            .WOTW3 {
+                width: 33%;
+            }
+            .wine-of-the-week ul {
+                color: black;
+                font-family: 'Roboto Slab', serif;
+                font-size: 1em;
+                font-style: 100;
+                list-style-type: none;
+                display: inline-block;
+                margin: 0 auto;
+                text-align: left;
+                line-height: 1.5em;
+                padding: 20px;
+            }
         }
-
-        .logo-footer{
-          width:33%;
-          padding: 5%;
+        /* Footer Code */
+        /* Footer Code */
+        /* Footer Code */
+        /* Footer Code */
+        footer {
+            height: auto;
+            display: flex;
         }
-
-        .logo-footer img{
-          width:100%;
-          padding-top: 30%;
-          max-width:400px;
+        .logo-footer {
+            width: 33%;
+            padding: 5%;
         }
-
-        .hours{
-
-          width:33%;
-          padding:5%;
-          margin:2% 0 2% 0;
+        .logo-footer img {
+            width: 100%;
+            padding-top: 30%;
+            max-width: 400px;
         }
-
-        .hour ul{
-          width:100px;
+        .hours {
+            width: 33%;
+            padding: 5%;
+            margin: 2% 0 2% 0;
         }
-
-        .contact{
-          width:33%;
-          margin:2% 0 2% 0;
-          padding:5%;
+        .hour ul {
+            width: 100px;
         }
-      }
-
-
-@media screen and (min-width:1000px) {
-
-
-          .logo-footer img{
-            width:100%;
-            padding-top: 15%;
-            max-width:400px;
-          }
-
-          h3 {
-              font-size: 3em;
-              color:  rgb(204, 184, 163);
-              margin: 0 auto;
-              display: block;
-              text-align: center;
-          }
-
-          h5{
-            font-size: 25px;
-            line-height: 1.25em;
-
-
-          }
-}
-
-@media screen and (min-width:1500px) {
-
-
-          .logo-footer img{
-            width:100%;
-            padding-top: 5%;
-            max-width:400px;
-          }
-
-          .hours{
-
-            width:33%;
-            padding:5%;
-            margin:2% 0 2% 0;
-            font-size: 1.15em;
-          }
-
-          .contact{
-            width:33%;
-            margin:2% 0 2% 0;
-            padding:5%;
-            font-size: 1.15em;
-          }
-
-
-
-}
+        .contact {
+            width: 33%;
+            margin: 2% 0 2% 0;
+            padding: 5%;
+        }
+        h5 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            color: white;
+            margin: 0 auto;
+            display: block;
+            text-align: left;
+            font-weight: 100;
+            font-style: italic;
+        }
+        @media screen and (min-width:1000px) {
+            .logo-footer img {
+                width: 100%;
+                padding-top: 15%;
+                max-width: 400px;
+            }
+            h3 {
+                font-size: 3em;
+                color: rgb(204, 184, 163);
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+            }
+            h5 {
+                font-size: 25px;
+                line-height: 1.25em;
+            }
+        }
+        @media screen and (min-width:1500px) {
+            .logo-footer img {
+                width: 100%;
+                padding-top: 5%;
+                max-width: 400px;
+            }
+            .hours {
+                width: 33%;
+                padding: 5%;
+                margin: 2% 0 2% 0;
+                font-size: 1.15em;
+            }
+            .contact {
+                width: 33%;
+                margin: 2% 0 2% 0;
+                padding: 5%;
+                font-size: 1.15em;
+            }
+        }
